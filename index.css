@@ -1,0 +1,178 @@
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+} 
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 1rem;
+    background-color: hsl(30, 38%, 92%);
+    
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    height: auto;
+    /* min-height: 800px; */
+    max-width: 400px;
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+h1, h2 {
+   font-family: "Fraunces", serif; 
+}
+
+h1, {
+    font-family: 700;
+}
+
+.perfumepic {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 0.6rem;
+    border-top-right-radius: 0.6rem;
+    align-self: center;
+    margin-bottom: 1.5rem;
+}
+
+.desktop {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+.cost {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    
+}
+
+h2 {
+    color: hsl(158, 36%, 37%);
+}
+h3, .perfume, p {
+    color: hsl(228, 12%, 48%);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.2rem;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding-right: 1.2rem;
+}
+
+p, h3 {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.perfume {
+   letter-spacing: 5px;
+   font-weight: 500;
+   font-size: 14px;
+}
+
+.button {
+    background-color: hsl(158, 36%, 37%);
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    border-radius: 0.5rem;
+    padding-left: 3.6rem;
+    
+}
+
+.cart {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+} 
+
+ 
+ @media (min-width: 1024px) {
+    
+   .perfumepic {
+    display: none;
+   }
+
+   .desktop {
+    display: block;
+    height: auto;
+    width: 500px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+   }
+
+   .container {
+    max-height: 600px;
+    max-width: 1000px;
+    flex-direction: row;
+    width: 100%;
+   
+   
+   }
+
+   .perfume {
+    font-size: 25px;
+   }
+
+   .content {
+    margin-top: 80px;
+    gap: 20px;
+    margin-top: 30px;
+
+   }
+
+   span {
+    font-size: large;
+   }
+
+   h1 {
+    font-size: 50px;
+   }
+
+   p {
+    font-size: 20px;
+    word-spacing: 10px;
+    line-height: 30px;
+   }
+
+
+    .cost {
+        margin-bottom: 20px;
+    }
+   h2 {
+    font-size: 50px;
+   }
+
+   h3 {
+    font-size: 30px;
+   }
+
+   .button {
+    height: 80px;
+    width: 100%;
+    gap: 50px;
+    /* padding-left: 10px; */
+   }
+
+   .cart {
+    font-size: 24px;
+   }
+}  
